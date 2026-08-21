@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mentor's Table: Lessons from Those Who Came Before</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">The Mentor's Table</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#panelists">Panelists</a>
+      <a href="#transcript">Transcript</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#end-note">End Note</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Panel Discussion | 27 July 2026</p>
+        <h1>The Mentor's Table</h1>
+        <p class="tagline">Lessons from Those Who Came Before</p>
+        <p class="lede" id="eventIntro"></p>
+        <div class="hero-actions" aria-label="Page shortcuts">
+          <a class="button primary" href="#transcript">Read the transcript</a>
+          <a class="button secondary" href="#panelists">Meet the panelists</a>
+        </div>
+      </div>
+      <div class="hero-image" aria-label="The Mentor's Table group photo">
+        <img src="gallery/DSC_4402.JPG" alt="The Mentor's Table panelists and event team">
+      </div>
+    </section>
+
+    <section class="section panelists-section" id="panelists">
+      <div class="section-heading">
+        <p class="kicker">The Panel</p>
+        <h2>Panelists Introduction</h2>
+      </div>
+      <div class="panelist-grid" id="panelistGrid"></div>
+    </section>
+
+    <section class="section transcript-section" id="transcript">
+      <div class="section-heading transcript-heading">
+        <div>
+          <p class="kicker">Full Transcript</p>
+          <h2>Questions and Answers</h2>
+        </div>
+      </div>
+      <div class="transcript-shell">
+        <div class="transcript-content">
+          <div id="questionList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <p class="kicker">Captured Moments</p>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <dialog class="image-viewer" id="imageViewer" aria-labelledby="imageViewerTitle">
+      <div class="image-viewer-content">
+        <p class="sr-only" id="imageViewerTitle">Expanded gallery image</p>
+        <button class="image-viewer-close" id="imageViewerClose" type="button" aria-label="Close image viewer" title="Close image viewer">&times;</button>
+        <img id="imageViewerImage" src="" alt="">
+      </div>
+    </dialog>
+
+    <section class="section end-note" id="end-note">
+      <div class="section-heading">
+        <p class="kicker">Closing</p>
+        <h2>End Note</h2>
+      </div>
+      <div class="end-note-copy" id="endNote"></div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
